@@ -86,7 +86,6 @@ terminated = False
 score = 0
 step = 0
 state = environment.reset()[0]
-
 game = input("Do you want to watch the  AI play: ")
 
 if game.lower() == "yes":
