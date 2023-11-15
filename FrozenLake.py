@@ -64,7 +64,9 @@ for episode in range(numEpisodes):
 
         # 1 is going down and 2 is going to the right, so we are rewarding moving down to the right more
         if(action == 1 or action == 2):
-            reward = reward+1
+            reward = reward+0.25
+        if(action ==0 or action ==3):
+            reward = reward -0.25
         
 
         qTable[state, action] = qTable[state, action] + learnRate * \
